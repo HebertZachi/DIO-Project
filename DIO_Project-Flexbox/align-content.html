@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Content</title>
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid rgb(172, 149, 149);
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            
+        }
+        .stretch {
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start {
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+
+    <p>flex-Start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+
+    <p>flex-End</p>
+    <div class="container end">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+
+    <p>Space-Around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+
+    <p>Space-Between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque  totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus  </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+        <div class="item">Lorem ipsum dolor sit amet. Eos atque dolore est repellendus totam qui sapiente </div>
+    </div>
+</body>
+</html>
